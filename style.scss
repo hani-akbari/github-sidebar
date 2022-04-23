@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+aside {
+  background-color: #632aff;
+  width: 200px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      border-right: 3px solid #fff;
+    }
+  }
+
+  i {
+    color: #fff;
+    padding-right: 10px;
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+}
+
+.pages {
+  width: 100%;
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.pages > div {
+  height: 100vh;
+  overflow-y: scroll;
+}
